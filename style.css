@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    padding-top: 45px;
+}
+
+.HeadCont {
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.HeadCont a {
+    color: #134B7B;
+}
+
+.HeadBox1,
+.HeadBox2 {
+    /* border: 2px solid black; */
+    margin: 10px 20px;
+    padding: 2px 2px;
+    color: #134B7B;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 653px) {
+    .HeadCont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    body {
+        padding-top: 130px;
+    }
+}
+
+@media screen and (max-width:293px) {
+
+    .HeadBox1,
+    .HeadBox2 {
+        font-size: 10px;
+    }
+
+    body {
+        padding-top: 100px;
+    }
+}
+
+.NavCont {
+    width: 100%;
+    border: 2px solid gray;
+    /* background-color: #134a7bb8; */
+    color: #fff;
+    background-color: #134B7B;
+    box-sizing: border-box;
+    padding: 5px 32px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 32px;
+
+}
+
+@media screen and (max-width:653px) {
+    .NavCont {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 20px;
+        /* position: relative; */
+    }
+}
+
+@media screen and (max-width:373px) {
+    .NavCont {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        font-size: 13px;
+        /* position: relative; */
+    }
+}
+
+@media screen and (max-width:239px) {
+    .NavCont {
+        display: flex;
+        flex-direction: row;
+        font-size: 8px;
+        justify-content: center;
+        /* position: relative; */
+    }
+}
+
+.content {
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 100px;
+    background-color: #f5f7fb;
+
+}
+
+.content1 {
+    /* border: 2px solid black; */
+    /* flex-grow: 2; */
+    padding: 60px 32px;
+    /* padding-top: 60px; */
+    font-size: 20px;
+}
+
+.content2 {
+    /* border: 2px solid red; */
+    overflow: hidden;
+
+}
+
+.content2 img {
+    /* padding-top: 10px; */
+    height: 200px;
+    border-radius: 100px;
+    /* filter: drop-shadow(10px 10px 10px #bed3e2); */
+}
+
+@media screen and (max-width: 521px) {
+    .content {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .content1 {
+        padding: 0px 32px;
+    }
+}
+
+.content li {
+    color: #134B7B;
+}
+
+.QHead {
+    background-color: #f5f7fb;
+}
+
+.QHead h3 {
+    text-align: center;
+    color: #134B7B;
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 240px) {
+    .QHead h3 {
+        font-size: 18px;
+    }
+
+    .content1 {
+        font-size: 18px;
+    }
+}
+
+.QualificationCont {
+    /* border: 2px solid red; */
+    width: 100%;
+    background-color: #f5f7fb;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.QualMid {
+    background-color: #fff;
+    padding: 20px 30px;
+    line-height: 34px;
+    /* width: 80%; */
+    border-radius: 25px;
+}
+
+/* @media screen and (max-width: 240px) {} */
+
+.SkillCont1 {
+    padding: 8px 0px;
+    /* border: 2px solid red; */
+    background-color: #f5f7fb;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.SkillCont2 {
+    padding: 8px 0px;
+    /* border: 2px solid red; */
+    background-color: #f5f7fb;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skill {
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 50px;
+    box-shadow: 3px 3px 3px gray;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.skill:hover {
+    background-color: aquamarine;
+}
+
+@media screen and (max-width: 1078px) {
+
+    .SkillCont2,
+    .SkillCont1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:292px) {
+    .skill {
+        width: 100%;
+        font-size: 10px;
+    }
+}
+
+.project p {
+    line-height: 34px;
+}
+
+.ProjectCont {
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #f5f7fb;
+}
+
+.project {
+    /* border: 2px solid black; */
+    padding: 15px 35px;
+    box-sizing: border-box;
+    background-color: #fff;
+    box-shadow: 3px 3px 3px gray;
+    border-radius: 10px;
+    width: 40%;
+}
+
+@media screen and (max-width:860px) {
+    .ProjectCont {
+        display: flex;
+        flex-wrap: wrap;
+        
+
+        .project {
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
+}
